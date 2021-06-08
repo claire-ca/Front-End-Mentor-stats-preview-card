@@ -1,0 +1,184 @@
+/* line 17, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* line 21, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* line 28, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+body {
+  background-color: #090b1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+/* line 35, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 38, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 41, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+main {
+  background-color: #1b1938;
+  text-align: center;
+}
+
+/* line 44, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+main p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* line 50, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+section {
+  padding: 40px;
+}
+
+/* line 53, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 57, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.desktop-image {
+  display: none;
+}
+
+/* line 60, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.images {
+  position: relative;
+}
+
+/* line 63, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.overlay::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6a2197;
+  opacity: .5;
+}
+
+/* line 73, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.card {
+  border-radius: 8px;
+  margin: 5.333rem auto;
+  max-width: 654px;
+  overflow: hidden;
+}
+
+/* line 79, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.title {
+  font-size: 1.866rem;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+
+/* line 83, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.title .violet {
+  color: #aa5cdb;
+}
+
+/* line 87, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.stats {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* line 93, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.stats li:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+/* line 96, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+.stats .number {
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 106, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .card,
+  .stats ul {
+    display: flex;
+    align-items: center;
+  }
+  /* line 111, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .card {
+    max-width: 1110px;
+    max-height: 446px;
+    margin: 12rem auto;
+  }
+  /* line 116, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .mobile-image {
+    display: none;
+  }
+  /* line 119, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .desktop-image {
+    display: block;
+    height: 446px;
+    object-fit: cover;
+  }
+  /* line 125, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .stats li:not(:last-of-type) {
+    padding-bottom: 0;
+    padding-right: 60px;
+  }
+  /* line 129, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .stats li {
+    font-family: "Lexend Deca", sans-serif;
+  }
+  /* line 131, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .stats li .number {
+    font-family: "Inter", sans-serif;
+  }
+  /* line 135, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  main {
+    text-align: left;
+  }
+  /* line 137, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  main p {
+    padding-bottom: 70px;
+  }
+  /* line 141, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  section {
+    padding: 70px;
+    flex-basis: 55%;
+  }
+  /* line 145, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .images {
+    order: 1;
+  }
+  /* line 148, ../../../../../Users/clairecalder/Documents/GitHub/Front-End-Mentor-stats-preview-card/scss/style.scss */
+  .title {
+    font-size: 2.4rem;
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

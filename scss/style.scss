@@ -1,0 +1,155 @@
+// Variables
+
+// Colors
+$backgroundDarkBlue: hsl(233, 47%, 7%);
+$cardDarkBlue: hsl(244, 38%, 16%);
+$violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$paragraphWhite: hsla(0, 0%, 100%, 0.75);
+$statsWhite: hsla(0, 0%, 100%, 0.6);
+
+// Fonts
+
+$bodyCopy: 15px;
+$fontPrimary: 'Inter', sans-serif;
+$fontSecondary: 'Lexend Deca', sans-serif;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    background-color: $backgroundDarkBlue;
+    color: $white;
+    font-family: $fontPrimary;
+    font-size: $bodyCopy;
+    line-height: 1.3;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style-type: none;
+}
+main {
+    background-color: $cardDarkBlue;
+    text-align: center;
+    p {
+        color: $paragraphWhite;
+        line-height: 1.6;
+        padding-bottom: 40px;
+    }
+}
+section {
+    padding: 40px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.desktop-image {
+    display: none;
+}
+.images{
+    position: relative;
+}
+.overlay::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darken($violet, 25%);
+    opacity: .5;
+}
+.card {
+    border-radius: 8px;
+    margin: 5.333rem auto;
+    max-width: 654px;
+    overflow: hidden;
+}
+.title { 
+    font-size: 1.866rem;
+    font-weight: 700;
+    padding-bottom: 18px;
+    .violet { 
+        color: $violet;
+    }
+}
+.stats {
+    color: $statsWhite;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    li:not(:last-of-type) {
+        padding-bottom: 30px;
+    }
+    .number {
+        color: $white;
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card, 
+    .stats ul{
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        max-width: 1110px;
+        max-height: 446px;
+        margin: 12rem auto;
+    }
+    .mobile-image {
+        display: none;
+    }
+    .desktop-image {
+        display: block;
+        height: 446px;
+        object-fit: cover;
+    }
+
+    .stats li:not(:last-of-type) {
+        padding-bottom: 0;
+        padding-right: 60px;
+    }
+    .stats li {
+        font-family: $fontSecondary;
+        .number {
+            font-family: $fontPrimary;
+        }
+    }
+    main {
+        text-align: left;
+        p {
+            padding-bottom: 70px;
+        }
+    }
+    section {
+        padding: 70px;
+        flex-basis: 55%;
+    }
+    .images {
+        order: 1;
+    }
+    .title {
+        font-size: 2.4rem;
+        padding-bottom: 30px;
+    }
+}
+
+
+
