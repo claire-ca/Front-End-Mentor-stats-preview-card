@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Stats Preview Card Component - Mobile First, Flexbox and SASS](https://www.frontendmentor.io/solutions/stats-preview-card-component-mobile-first-flexbox-and-sass-vxXYE2a1h)
+- Live Site URL: [Vercel URL](https://front-end-mentor-stats-preview-card.vercel.app/)
 
 ### Built with
 
